@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mapboxgl-control-container {
+  display: none !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+/* Smooth transitions for the radial gradient */
+.radial-gradient-overlay {
+  transition: background 0.15s ease-out;
+}
